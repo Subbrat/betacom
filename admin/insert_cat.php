@@ -6,7 +6,7 @@
         <input type="text" class="s6-input s6-border s6-round-large" name="cat_title" placeholder="name of new category"
             aria-label="username">
         <br>
-        <input type="submit" class="s6-button" name="" id="">
+        <input type="submit" class="s6-button s6-green " name="" id="">
 
     </div>
 </form>

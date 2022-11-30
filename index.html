@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,9 +56,7 @@
         </li>
       </ul>
       <p>Hi
-        <?php
-        $username = "subbrat";
-        echo $username ?>
+        <!-- <?php echo ₹_SESSION['username']; ?> -->
         Subbrat
       </p>
       <div class="s6-display-bottommiddle">
@@ -326,9 +325,17 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
     crossorigin="anonymous"></script>
-  <script src="./main.js">
+  <script>
+    // Script to open and close sidebar
+    function s6_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    function s6_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
   </script>
 </body>
 
 </html>
-?>
