@@ -1,0 +1,9 @@
+{
+	"php": {
+  "prefix": "br",
+  "body": [
+    "echo \"<br>\";"
+  ],
+  "description": "php"
+}
+}

@@ -1,6 +1,6 @@
 {
 	"html,php": {
-		"prefix": "p",
+		"prefix": "prod",
 		"body": [
 			"",
 			"        <a href=\"#${1:prodlink}\">",

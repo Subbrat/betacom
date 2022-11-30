@@ -1,3 +1,8 @@
+<?php
+include('../includes/con_check.php')
+
+    ?>
+
 <link rel="stylesheet" href="./../main.css">
 
 <form action="" class="mb-2" method="post">

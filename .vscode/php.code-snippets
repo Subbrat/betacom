@@ -1,0 +1,12 @@
+{
+	"php": {
+		"prefix": "p",
+		"body": [
+			"<?php",
+			"${1}",
+			"",
+			"?>"
+		],
+		"description": "php"
+	}
+}
