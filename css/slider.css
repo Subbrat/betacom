@@ -1,8 +1,10 @@
-.slidehead {
-    display: none
-}
+ @charset "UTF-8";
 
-/* .s6-animate-fading {
+ .slidehead {
+     display: none
+ }
+
+ /* .s6-animate-fading {
     animation: fading 2.5s infinite
 }
 

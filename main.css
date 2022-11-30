@@ -1,0 +1,132 @@
+ @charset "UTF-8";
+
+ .search-container button {
+     background: #ddd;
+     border: none;
+     cursor: pointer;
+ }
+
+ .search-container button:hover {
+     background: #ccc;
+ }
+
+ a {
+     color: rgb(0, 0, 0);
+     text-decoration: none;
+     display: inline-block;
+     position: relative;
+ }
+
+ a:after {
+     background: none repeat scroll 0 0 transparent;
+     bottom: 0;
+     content: "";
+     display: block;
+     height: 2px;
+     left: 50%;
+     position: absolute;
+     background: rgb(0, 0, 0);
+     transition: width 0.3s ease 0s, left 0.3s ease 0s;
+     width: 0;
+ }
+
+ a:hover:after {
+     width: 100%;
+     left: 0;
+ }
+
+ a.cartl:hover:after {
+     width: 0%;
+     left: 0;
+ }
+
+ a.logout:hover:after {
+     width: 0%;
+     left: 0;
+ }
+
+ a.headd:hover:after {
+     width: 0%;
+     left: 0;
+ }
+
+ .logo {
+     width: 45%;
+     border-radius: 50%;
+ }
+
+ .usex {
+     display: inline-block;
+     margin: 0 auto;
+     min-width: 90%;
+ }
+
+ .li,
+ ul {
+     list-style: none;
+ }
+
+ .prods {
+     max-width: 1000px;
+     margin: 0 auto;
+     display: grid;
+     gap: .8rem;
+     grid-template-columns: repeat(auto-fit, minmax(210px, 3fr));
+ }
+
+ .logo,
+ img {
+     -webkit-user-drag: none;
+     -khtml-user-drag: none;
+     -moz-user-drag: none;
+     -o-user-drag: none;
+ }
+
+ .bold {
+     font-weight: bold;
+ }
+
+ .mate {
+     text-transform: uppercase;
+ }
+
+ .uppe {
+     text-transform: capitalize;
+ }
+
+ body,
+ html {
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+ .inp {
+     width: 34%;
+     height: 50px;
+     border: 2px solid #000;
+     border-radius: 25px;
+     margin: 10px 0;
+     opacity: 0.5;
+     transition: 200ms;
+     font-weight: 600;
+     position: relative;
+     text-align: center;
+ }
+
+ .btn {
+     width: 30px;
+     border: none;
+     padding: 15px;
+     color: #fff;
+     background-color: #000;
+     font-size: 24px;
+     border-radius: 30px;
+     cursor: pointer;
+ }
+
+ .cenx {
+     width: 100%;
+     margin: 1px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
