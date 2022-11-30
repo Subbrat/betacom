@@ -14,8 +14,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./s6css.css">
   <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./s6css.css">
   <style>
     .search-container button {
       background: #ddd;
@@ -81,6 +81,14 @@
     ul {
       list-style: none;
     }
+
+    .prods {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      gap: .8rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+    }
   </style>
 </head>
 
@@ -116,9 +124,8 @@
           <a href="#">login</a>
         </li>
       </ul>
-
       <p>Hi
-        <!-- <?php echo $_SESSION['username']; ?> -->
+        <!-- <?php echo ₹_SESSION['username']; ?> -->
         Subbrat
       </p>
       <span class="cart">
@@ -149,100 +156,148 @@
   <div class="s6-overlay s6-hide-large s6-animate-opacity" onclick="s6_close()" style="cursor:pointer"
     title="close side menu" id="myOverlay"></div>
   <!-- </div> -->
-
-
   <!-- x products  -->
-
-
-
   <div class="s6-main s6-red " style="margin-left:300px">
     <!-- Push down content on small screens -->
     <div class="s6-red s6-hide-large" style="margin-top:83px"></div>
     <!--x-->
-    <header class="s6-container s6-xlarge">
+    <header class="s6-container s6-padding-32 s6-xlarge">
       <p class="s6-left">The Merchandise</p>
       <p class="s6-right">
         <i class="fa fa-shopping-cart s6-margin-right"></i>
         <i class="fa fa-search"></i>
       </p>
     </header>
-
     <div class="s6-display-container s6-container">
       <img src="./imges/head.jpg" alt="Jeans" style="width:100%">
       <div class="s6-display-topleft s6-text-white" style="padding:24px 48px">
-        <h1 class="s6-jumbo s6-hide-small">New arrivals</h1>
+        <!-- <h1 class="s6-jumbo s6-hide-small">New arrivals</h1>
         <h1 class="s6-hide-large s6-hide-medium">New arrivals</h1>
         <h1 class="s6-hide-small">COLLECTION 2016</h1>
-        <p><a href="#jeans" class="s6-button s6-black s6-padding-large s6-large">SHOP NOW</a></p>
+        <p><a href="#jeans" class="s6-button s6-black s6-padding-large s6-large">SHOP NOW</a></p> -->
       </div>
     </div>
-
-    <div class="s6-container s6-text-grey" id="jeans">
-      <p>8 items</p>
-    </div>
-
-
-
-
-
-
-
+    <br>
     <!-- Product grid -->
     <div class="s6-row s6-grayscale" id="tshirt">
-      <div class="s6-col l3 s6">
-        <div class="s6-container">
-          <img src="./imges/prodimg/1.jpg" style="width:100%">
-          <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
-        </div>
-        <div class="s6-container">
-          <img src="./imges/prodimg/2.jpg" style="width:100%">
-          <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-        </div>
-      </div>
+      <div class="prods">
 
-      <div class="s6-col l3 s6">
-        <div class="s6-container">
-          <div class="s6-display-container">
-            <img src="./imges/prodimg/3.jpg" style="width:100%">
-            <span class="s6-tag s6-display-topleft">New</span>
-            <div class="s6-display-middle s6-display-hover">
-              <button class="s6-button s6-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+
+
+
+
+
+
+
+
+        <!-- prods  -->
+
+        <div class="prod s6-white ">
+          <div class="s6-container">
+            <div class="s6-display-container s6-center">
+              <img src="./imges/prodimg/3.jpg" class="sc-4 " style="width:100%;margin-top: 8px;">
+              <span class="s6-tag s6-green s6-display-topleft" style="margin-top: 3px;">New</span>
+              <span>
+                <a href="#cartlink" class="cartl s6-button s6-grey s6-round s6-display-bottomleft ">
+                  <i class="fa-solid fa-cart-shopping cartl"></i>add to cart</a>
+                </a>
+              </span>
+              &nbsp;&nbsp;&nbsp;
+              <!-- <span>
+                <a href="index.php?logout='1'" class="logout"><i class="fa-solid fa-power-off"></i></a>
+              </span> -->
+              <!-- <span class="s6-display-bottommiddle">
+              <span class="s6-button s6-black">add <i class="fa fa-shopping-cart"></i></span>
+              <span class="s6-button s6-black">add <i class="fa fa-shopping-cart"></i></span>
+            </span> -->
+              <!-- <button class="s6-display-bottomleft s6-button s6-black">add to cart <i
+                class="fa fa-shopping-cart"></i></button>
+            <button class="s6-display-bottomleft s6-button s6-black">add to
+              cart <i class="fa fa-shopping-cart"></i></button> -->
+              <!-- <button class="s6-display-bottomrights6-button s6-black">view more<i
+                class="fa fa-shopping-cart"></i></button> -->
             </div>
+            <p>Mega Ripped Jeans<br><b>₹19.99</b></p>
           </div>
-          <p>Mega Ripped Jeans<br><b>$19.99</b></p>
         </div>
-        <div class="s6-container">
-          <img src="./imges/prodimg/4.jpg" style="width:100%">
-          <p>Washed Skinny Jeans<br><b>$20.50</b></p>
-        </div>
-      </div>
 
-      <div class="s6-col l3 s6">
-        <div class="s6-container">
-          <img src="./imges/prodimg/5.jpg" style="width:100%">
-          <p>Washed Skinny Jeans<br><b>$20.50</b></p>
-        </div>
-        <div class="s6-container">
-          <div class="s6-display-container">
-            <img src="./imges/prodimg/6.jpg" style="width:100%">
-            <span class="s6-tag s6-display-topleft">Sale</span>
-            <div class="s6-display-middle s6-display-hover">
-              <button class="s6-button s6-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="prod">
+          <div class="s6-container">
+            <div class="s6-display-container s6-center">
+              <img src="./imges/prodimg/3.jpg" style="width:100%">
+              <span class="s6-tag s6-green s6-display-topleft">New</span>
+              <span>
+                <a href="#cartlink" class="cartl s6-button s6-grey s6-round s6-display-bottomleft ">
+                  <i class="fa-solid fa-cart-shopping cartl"></i>add to cart</a>
+                </a>
+              </span>
+              &nbsp;&nbsp;&nbsp;
+              <!-- <span>
+                <a href="index.php?logout='1'" class="logout"><i class="fa-solid fa-power-off"></i></a>
+              </span> -->
+              <!-- <span class="s6-display-bottommiddle">
+              <span class="s6-button s6-black">add <i class="fa fa-shopping-cart"></i></span>
+              <span class="s6-button s6-black">add <i class="fa fa-shopping-cart"></i></span>
+            </span> -->
+              <!-- <button class="s6-display-bottomleft s6-button s6-black">add to cart <i
+                class="fa fa-shopping-cart"></i></button>
+            <button class="s6-display-bottomleft s6-button s6-black">add to
+              cart <i class="fa fa-shopping-cart"></i></button> -->
+              <!-- <button class="s6-display-bottomrights6-button s6-black">view more<i
+                class="fa fa-shopping-cart"></i></button> -->
             </div>
+            <p>Mega Ripped Jeans<br><b>₹19.99</b></p>
           </div>
-          <p>Vintage Skinny Jeans<br><b class="s6-text-red">$14.99</b></p>
         </div>
-      </div>
+        <div class="prod">
+          <div class="s6-container">
+            <div class="s6-display-container s6-center">
+              <img src="./imges/prodimg/3.jpg" style="width:100%">
+              <span class="s6-tag s6-green s6-display-topleft">New</span>
+              <span>
+                <a href="#cartlink" class="cartl s6-button s6-grey s6-round s6-display-bottomleft ">
+                  <i class="fa-solid fa-cart-shopping cartl"></i>add to cart</a>
+                </a>
+              </span>
+              &nbsp;&nbsp;&nbsp;
+              <!-- <span>
+                <a href="index.php?logout='1'" class="logout"><i class="fa-solid fa-power-off"></i></a>
+              </span> -->
+              <!-- <span class="s6-display-bottommiddle">
+              <span class="s6-button s6-black">add <i class="fa fa-shopping-cart"></i></span>
+              <span class="s6-button s6-black">add <i class="fa fa-shopping-cart"></i></span>
+            </span> -->
+              <!-- <button class="s6-display-bottomleft s6-button s6-black">add to cart <i
+                class="fa fa-shopping-cart"></i></button>
+            <button class="s6-display-bottomleft s6-button s6-black">add to
+              cart <i class="fa fa-shopping-cart"></i></button> -->
+              <!-- <button class="s6-display-bottomrights6-button s6-black">view more<i
+                class="fa fa-shopping-cart"></i></button> -->
+            </div>
+            <p>Mega Ripped Jeans<br><b>₹19.99</b></p>
+          </div>
+        </div>
+        <!-- over  -->
 
-      <div class="s6-col l3 s6">
-        <div class="s6-container">
-          <img src="./imges/prodimg/7.jpg" style="width:100%">
-          <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
-        </div>
-        <div class="s6-container">
-          <img src="./imges/prodimg/8.jpg" style="width:100%">
-          <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
-        </div>
+
+
+        <br>
+        <br>
+        <br>
+        <!-- prods  -->
       </div>
     </div>
     <!--x-->

@@ -1127,12 +1127,12 @@
      font-size: 110%
  }
 
- .s6-card,
- .s6-card-2 {
+ .sc,
+ .sc-2 {
      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
  }
 
- .s6-card-4,
+ .sc-4,
  .s6-hover-shadow:hover {
      box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
  }
