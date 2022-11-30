@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="./imges/ic.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beta com V.2</title>
+  <!-- bootstrap css   -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- font awsome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./s6css.css">
+  <link rel="stylesheet" href="./main.css">
+  <style>
+    .search-container button {
+      background: #ddd;
+      border: none;
+      cursor: pointer;
+    }
+
+    .search-container button:hover {
+      background: #ccc;
+    }
+
+    a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
+    }
+
+    a:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: rgb(0, 0, 0);
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+
+    a:hover:after {
+      width: 100%;
+      left: 0;
+    }
+
+    a.cartl:hover:after {
+      width: 0%;
+      left: 0;
+    }
+
+    a.logout:hover:after {
+      width: 0%;
+      left: 0;
+    }
+
+    a.headd:hover:after {
+      width: 0%;
+      left: 0;
+    }
+
+    .logo {
+      width: 45%;
+    }
+
+    .usex {
+      display: inline-block;
+      margin: 0 auto;
+      min-width: 90%;
+    }
+
+    .li,
+    ul {
+      list-style: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <div class="main"> -->
+  <!-- side bar / nav bar  -->
+  <nav class="s6-sidebar s6-bar-block s6-cyan s6-animate-left s6-text-black s6-collapse s6-top s6-center"
+    style="z-index:3;width:300px;" id="mySidebar"><br>
+    <img src="./imges/ic.png" class="logo" alt="">
+    <h3 class="s6-padding s6-center headd"><a href="#" class="headd">demo shop</a></h3>
+    <!-- logo here -->
+    <!-- search bar  -->
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search" name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    <br>
+    <!--
+    <div class="row">
+      <div class="col-sm-8">col-sm-8</div>
+      <div class="col-sm-4">col-sm-4</div>
+    </div> -->
+    <div class="row usex">
+      <!-- maybe guest !  -->
+      <!-- <div class="col-sm-6>  -->
+      <ul>
+        <li>
+          <a href="">Hi Guest</a>
+        </li>
+        <li>
+          <a href="#">login</a>
+        </li>
+      </ul>
+
+      <p>Hi
+        <!-- <?php echo $_SESSION['username']; ?> -->
+        Subbrat
+      </p>
+      <span class="cart">
+        <a href="#cartlink" class="cartl">
+          <i class="fa-solid fa-cart-shopping cartl"><sup>1</sup> &nbsp;</i></a>
+        </a>
+      </span>
+      &nbsp;&nbsp;&nbsp;
+      <span> <a href="index.php?logout='1'" style="color: blue  ;" class="logout"><i
+            class="fa-solid fa-power-off"></i></a>
+      </span>
+    </div>
+    <!-- <div class="col">
+    <p> <a href="index.php?logout='1'" style="color: red;">manage account <i fa fa-men></i></a> </p>
+    </div> -->
+    <a href="javascript:void(0)" onclick="s6_close()" class="s6-bar-item s6-button s6-padding s6-hide-large">CLOSE</a>
+    <a href="#tshirt" onclick="s6_close()" class="s6-bar-item s6-button">t - Shirts </a>
+    <a href="#hoodies" onclick="s6_close()" class="s6-bar-item s6-button">Hoodies</a>
+    <a href="#stationary" onclick="s6_close()" class="s6-bar-item s6-button"> Stationary </a>
+  </nav>
+  <!-- Top menu on small screens -->
+  <header class="s6-container s6-top s6-hide-large s6-white s6-xlarge s6-padding-16">
+    <!-- <img src="./imges/ic.png" alt=""> -->
+    <span class="s6-left s6-padding">demo shop</span>
+    <a href="javascript:void(0)" class="s6-right s6-button s6-white" onclick="s6_open()">☰</a>
+  </header>
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="s6-overlay s6-hide-large s6-animate-opacity" onclick="s6_close()" style="cursor:pointer"
+    title="close side menu" id="myOverlay"></div>
+  <!-- </div> -->
+
+
+  <!-- x products  -->
+
+
+
+  <div class="s6-main s6-red " style="margin-left:300px">
+    <!-- Push down content on small screens -->
+    <div class="s6-red s6-hide-large" style="margin-top:83px"></div>
+    <!--x-->
+    <header class="s6-container s6-xlarge">
+      <p class="s6-left">The Merchandise</p>
+      <p class="s6-right">
+        <i class="fa fa-shopping-cart s6-margin-right"></i>
+        <i class="fa fa-search"></i>
+      </p>
+    </header>
+
+    <div class="s6-display-container s6-container">
+      <img src="./imges/head.jpg" alt="Jeans" style="width:100%">
+      <div class="s6-display-topleft s6-text-white" style="padding:24px 48px">
+        <h1 class="s6-jumbo s6-hide-small">New arrivals</h1>
+        <h1 class="s6-hide-large s6-hide-medium">New arrivals</h1>
+        <h1 class="s6-hide-small">COLLECTION 2016</h1>
+        <p><a href="#jeans" class="s6-button s6-black s6-padding-large s6-large">SHOP NOW</a></p>
+      </div>
+    </div>
+
+    <div class="s6-container s6-text-grey" id="jeans">
+      <p>8 items</p>
+    </div>
+
+
+
+
+
+
+
+    <!-- Product grid -->
+    <div class="s6-row s6-grayscale" id="tshirt">
+      <div class="s6-col l3 s6">
+        <div class="s6-container">
+          <img src="./imges/prodimg/1.jpg" style="width:100%">
+          <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+        </div>
+        <div class="s6-container">
+          <img src="./imges/prodimg/2.jpg" style="width:100%">
+          <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+        </div>
+      </div>
+
+      <div class="s6-col l3 s6">
+        <div class="s6-container">
+          <div class="s6-display-container">
+            <img src="./imges/prodimg/3.jpg" style="width:100%">
+            <span class="s6-tag s6-display-topleft">New</span>
+            <div class="s6-display-middle s6-display-hover">
+              <button class="s6-button s6-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+          </div>
+          <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+        </div>
+        <div class="s6-container">
+          <img src="./imges/prodimg/4.jpg" style="width:100%">
+          <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+        </div>
+      </div>
+
+      <div class="s6-col l3 s6">
+        <div class="s6-container">
+          <img src="./imges/prodimg/5.jpg" style="width:100%">
+          <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+        </div>
+        <div class="s6-container">
+          <div class="s6-display-container">
+            <img src="./imges/prodimg/6.jpg" style="width:100%">
+            <span class="s6-tag s6-display-topleft">Sale</span>
+            <div class="s6-display-middle s6-display-hover">
+              <button class="s6-button s6-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+          </div>
+          <p>Vintage Skinny Jeans<br><b class="s6-text-red">$14.99</b></p>
+        </div>
+      </div>
+
+      <div class="s6-col l3 s6">
+        <div class="s6-container">
+          <img src="./imges/prodimg/7.jpg" style="width:100%">
+          <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+        </div>
+        <div class="s6-container">
+          <img src="./imges/prodimg/8.jpg" style="width:100%">
+          <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+        </div>
+      </div>
+    </div>
+    <!--x-->
+  </div>
+  <!-- footer  -->
+  <footer>
+    <div class="s6-bottom s6-black">
+      <span class="s6-text-orange s6-bar-itemb s6-right">&nbsp;?&nbsp;&nbsp;</span>
+      <span><a href="https://instagram.com/subbrat_" class="s6-bar-itemb s6-hover-text-orange s6-right">&nbsp;
+          <span id="ldv"></span>&nbsp;</a></span>
+      <span>
+        <a href="https://forms.gle/fVGyaP1Q2XhNa3F3A" target="_blank"
+          class="s6-bar-itemb s6-hover-text-orange s6-right">
+          &nbsp;<i class="fa fa-envelope s6-text-white s6-hover-text-orange"></i>&nbsp;
+        </a>
+      </span>
+      <span>
+        <a href="https://subbrat.github.io/escapeone" target="_blank"
+          class="s6-bar-itemb s6-hover-text-orange s6-right">
+          &nbsp;<i class="fa fa-gamepad s6-text-green s6-hover-text-orange"></i>&nbsp;
+        </a>
+      </span>
+      <span class="s6-text-white s6-bar-itemb s6-right" id="ct"></span>
+    </div>
+  </footer>
+  <!-- bs JS  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+  <script>
+    // Script to open and close sidebar
+    function s6_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    function s6_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
