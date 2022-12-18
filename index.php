@@ -26,7 +26,7 @@
     class="s6-sidebar s6-bar-block s6-cyan s6-animate-left s6-text-black s6-collapse s6-display-container s6-top s6-center"
     style="z-index:3;width:300px;" id="mySidebar"><br>
     <img src="./imges/ic.png" class="logo" alt="">
-    <h3 class="s6-padding s6-center headd"><a href="#" class="headd">demo shop</a></h3>
+    <h3 class="s6-padding s6-center headd"><a href="#" class="headd">demo x shop</a></h3>
     <!-- logo here -->
     <!-- search bar  -->
     <div class="search-container">
@@ -84,7 +84,7 @@
   <!-- Top menu on small screens -->
   <header class="s6-container s6-top s6-hide-large s6-white s6-xlarge s6-padding-16">
     <!-- <img src="./imges/ic.png" alt=""> -->
-    <span class="s6-left s6-padding">demo shop</span>
+    <span class="s6-left s6-padding">demo x shop</span>
     <a href="javascript:void(0)" class="s6-right s6-button s6-white" onclick="s6_open()">☰</a>
   </header>
   <!-- Overlay effect when opening sidebar on small screens -->
